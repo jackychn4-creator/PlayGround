@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff6e8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+  <title>Cooking Fever: Restaurant Rush</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-screen="home" aria-label="Go to home"><span class="brand-mark">🍔</span><span class="brand-name">Burger <b>Boulevard</b><small>COOKING FEVER · RESTAURANT RUSH</small></span></button>
+      <div class="wallet"><span class="wallet-pill coin-pill"><span>🪙</span><b id="coin-count">120</b><button class="plus" aria-label="Get coins">+</button></span><span class="wallet-pill gem-pill"><span>💎</span><b id="gem-count">8</b><button class="plus" aria-label="Get gems">+</button></span></div>
+      <button class="avatar-button" id="profile-button" aria-label="Player profile">👩🏻‍🍳<i></i></button>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-screen="home"><span>🏠</span>Home</button>
+      <button class="nav-item" data-screen="map"><span>🗺️</span>Levels</button>
+      <button class="nav-item" data-screen="shop"><span>🛠️</span>Upgrades</button>
+      <button class="nav-item" data-screen="decor"><span>🎨</span>Decor</button>
+    </nav>
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
